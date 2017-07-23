@@ -15,3 +15,48 @@
 .list-post-card {
     cursor: default;
 }
+
+.post-card-space {
+    height: 20px;
+}
+
+.drawer-people-warp {
+
+}
+
+.drawer-people-info {
+    padding: 40px 20px 2em;
+}
+
+.drawer-people-avatar {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.drawer-people-desc {
+    margin: 1em 0 0;
+    color: #fff;
+}
+
+.drawer-nickname {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    color: #fff;
+}
+
+.drawer-people-desc-text {
+    display: inline-block;
+    padding: 4px 0px 0px 0px;
+    color: #c5cae9;
+    font-size: 13px;
+    background-color: transparent;
+    text-decoration: none;
+    outline: 0;
+    line-height: 13px;
+    margin-bottom: 0px;
+
+}

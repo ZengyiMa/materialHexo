@@ -13,6 +13,8 @@
 <v-app id="app"
        light>
 
+
+
     <v-toolbar class="primary" dark flat>
         <v-toolbar-side-icon @click.native.stop="drawer = !drawer"></v-toolbar-side-icon>
         <v-toolbar-title >blog's name</v-toolbar-title>
@@ -23,7 +25,6 @@
     </v-toolbar>
 
     <div class="primary header-bg-image"></div>
-
     <div class="list-container" >
             <v-card class="list-post-card" raised  hover >
                     <article  class="post-list-container" style="padding: 16px 20px;">
@@ -33,8 +34,29 @@
                             mutations，借助这个机制，我们可以制定一种策略化的规则。</div>
                     </article>
             </v-card>
-    </div>
+            <div class="post-card-space"></div>
 
+        <v-card class="list-post-card" raised  hover >
+            <article  class="post-list-container" style="padding: 16px 20px;">
+                <div style="margin-bottom: 10px;line-height: 14px;font-size: 13px;font-weight: bold;color: #727272;">2017年05月7日</div>
+                <div style="margin-bottom: 16px;"><a style="font-size: 24px;line-height: 32px;color: #3f51b5;display: inline-block;text-decoration: none;" href="#">Vue单页应用中的数据同步探索</a></div>
+                <div style="line-height: 1.8;">如何存放或更新缓存？缓存数据来源是预知的，我们可以预先定义哪些 mutation 是缓存相关的。我们期望这个过程更自然一点，通过某种变化自动映射，使以后不管缓存类别增加还是减少都能修改极少的代码来应对变化。Vuex的插件可以拦截
+                    mutations，借助这个机制，我们可以制定一种策略化的规则。</div>
+            </article>
+        </v-card>
+        <div class="post-card-space"></div>
+
+        <v-card class="list-post-card" raised  hover >
+            <article  class="post-list-container" style="padding: 16px 20px;">
+                <div style="margin-bottom: 10px;line-height: 14px;font-size: 13px;font-weight: bold;color: #727272;">2017年05月7日</div>
+                <div style="margin-bottom: 16px;"><a style="font-size: 24px;line-height: 32px;color: #3f51b5;display: inline-block;text-decoration: none;" href="#">Vue单页应用中的数据同步探索</a></div>
+                <div style="line-height: 1.8;">如何存放或更新缓存？缓存数据来源是预知的，我们可以预先定义哪些 mutation 是缓存相关的。我们期望这个过程更自然一点，通过某种变化自动映射，使以后不管缓存类别增加还是减少都能修改极少的代码来应对变化。Vuex的插件可以拦截
+                    mutations，借助这个机制，我们可以制定一种策略化的规则。</div>
+            </article>
+        </v-card>
+        <div class="post-card-space"></div>
+
+    </div>
 
 
 
@@ -46,7 +68,66 @@
             overflow
             enable-resize-watcher
             absolute
-    ></v-navigation-drawer>
+    >
+
+        <div class="drawer-people-warp primary">
+            <div class="drawer-people-info">
+                <img class="drawer-people-avatar" src="http://7xswwv.com1.z0.glb.clouddn.com/IMG_1677.JPG" alt="">
+                <div class="drawer-people-desc">
+                    <h5 class="drawer-nickname">
+                        马增翼的 blog
+                    </h5>
+                    <h5 class="drawer-people-desc-text">
+                        898509798@qq.com
+                    </h5>
+
+                </div>
+            </div>
+        </div>
+
+        <v-list dense>
+
+            <v-list-tile ripple>
+                <v-list-tile-action>
+                    <v-icon>search</v-icon>
+                </v-list-tile-action>
+                <v-list-tile-content>
+                    <v-list-tile-title>
+                        Search
+                    </v-list-tile-title>
+                </v-list-tile-content>
+            </v-list-tile>
+
+            <v-list-tile ripple>
+                <v-list-tile-action>
+                    <v-icon>search</v-icon>
+                </v-list-tile-action>
+                <v-list-tile-content>
+                    <v-list-tile-title>
+                        Search
+                    </v-list-tile-title>
+                </v-list-tile-content>
+            </v-list-tile>
+
+            <v-list-tile ripple>
+                <v-list-tile-action>
+                    <v-icon>search</v-icon>
+                </v-list-tile-action>
+                <v-list-tile-content>
+                    <v-list-tile-title>
+                        Search
+                    </v-list-tile-title>
+                </v-list-tile-content>
+            </v-list-tile>
+
+
+        </v-list>
+
+
+
+
+
+    </v-navigation-drawer>
 </v-app>
 
 
